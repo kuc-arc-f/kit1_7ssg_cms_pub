@@ -17,10 +17,12 @@ content = marked.parse(content);
 
 <!-- MarkUp -->
 <div class="container post_show_wrap">
-	<a href={`/`} class="btn"><button class="btn btn-outline-primary my-2">Back</button>
-	</a>		
+	<a href={`/`}>
+		<button class="btn btn-outline-primary my-2">Back</button>
+	</a>
+	<hr />	
 	<h1>{post.title}</h1>
 	<hr />
-	<div class="post_item">{@html content}</div>
+	<div>{@html content}</div>
 	<hr />
 </div>
